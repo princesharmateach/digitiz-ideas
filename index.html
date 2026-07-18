@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_outward" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=check_small" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: #c9ff00;
+            text-transform: capitalize;
+            cursor: none;
+        }
+        nav{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 0px 30px;
+        }
+        nav h3{
+             font-weight: 600;
+             font-size: 20px;    
+             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            list-style-type: none;
+        }
+        ul li a{
+            text-decoration: none;
+            display: flex;
+            font-size: 20px;
+            color: black;
+            font-weight: 200;
+        }
+        #main{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        
+        .bebas-neue-regular{
+            font-family: "Bebas Neue", sans-serif;
+            font-weight: bolder;
+          }
+          .btn1{
+            padding: 10px 10px;
+            font-size: 15px;
+            border-radius: 50px;
+            font-weight: 400;
+            border: 2px solid black;
+            background-color: transparent;
+            text-transform: uppercase;
+
+
+          }
+          #section01{
+            width: 450px;
+          }
+          #section02{
+            width: 450px;
+            margin-top: 40px;
+          }
+
+          #image01{
+            background-image: url(https://i.pinimg.com/736x/08/df/a5/08dfa507f3929e2640b32a5ff818e42b.jpg);
+            background-size: cover;
+            background-position: center;
+            width: 400px;
+            height: 70px;
+            border-radius: 50px;
+          }
+          #round{
+            width: 40px;
+            height: 40px;
+            border-radius: 100px;
+            border: 1px solid rgb(12, 12, 12);
+            margin: 20px 20px;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          #seco-hero{
+            background-image: url(https://cdn.prod.website-files.com/64e7340b7d897bf0c7179e52/64ebbe14414665ada632fb9e_hero%20big%20image-min.png);
+            background-size: cover;
+            width: 70%;
+            height: 500px;
+            position: relative;
+            margin: auto;
+            margin-top: 30px;
+
+            
+          }
+        
+          #arow{
+            width: 70px;
+            height: 70px;
+            position: absolute;
+            right: 0px;
+            top: -20px;
+            border-radius: 100px;
+            background-color: #0a0a0a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+
+
+
+
+          }
+       .material-symbols-outlined{
+              font-variation-settings:
+              'FILL' 0,
+              'wght' 400,
+              'GRAD' 0,
+              'opsz' 24
+             
+            }
+            p{
+                font-weight: 100;
+                font-size: 20px;
+            }
+            .cursor{
+                width: 20px;
+                height: 20px;
+                background: rgb(122, 35, 169);
+                border-radius: 50%;
+                position: fixed;
+                pointer-events: none;
+                transform: translate(-50%, -50%);
+                z-index: 9999;
+            }
+            #mm{
+                background-color: #0a0a0a;
+                width: 98%;
+
+
+            }
+            #animasan{
+                font-family: "Bebas Neue", sans-serif;
+                color: #c9ff00;
+                font-weight: 700;
+                font-size: 40px;
+                animation: moveText 5s linear infinite;
+            }
+            @keyframes moveText{
+                0%{
+                    transform: translatex(0px);
+                }
+                100%{
+                    transform: translatex(700px);
+
+                }
+            
+
+            }
+            
+            .bebas-neue-regular {
+                font-family: "Bebas Neue", sans-serif;
+                font-weight: 400;
+                font-style: 20px;
+              }
+              
+              #data,#ideas{
+                font-size:190px ;
+                line-height: 2px;
+
+
+              }
+              #contere{
+                background-color: #0a0a0a;
+                color: rgb(176, 178, 179);
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                align-items: center;
+                width: 100%;
+              }
+              #text{
+                width: 550px;
+              }
+              #btn02{
+                width: 400px;
+              }
+              #text01{
+                font-size: 50px;
+                font-weight: bolder;
+                line-height: 0;
+              }
+              #text02{
+                font-weight: 200;
+                color: gray;
+                
+              }
+              .btn04{
+                padding: 14px 30px;
+                border-radius: 20px;
+                border:  2px solid white;
+                color: white;
+                background-color: transparent;
+                text-transform: capitalize;
+                font-size: 20px;
+              }
+              #btn02{
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                gap: 20px;
+              }
+              
+                .material-symbols-outlined{
+                  font-variation-settings:
+                  'FILL' 0,
+                  'wght' 400,
+                  'GRAD' 0,
+                  'opsz' 24
+                }
+#box01{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+#parass{
+  font-size: 30px;
+  color: gray;
+}
+#parass:hover{
+  color: white;
+}
+#icons{
+  font-size: 80px;
+}
+hr{
+  color: gray;
+}
+.bevan-regular {
+  font-family: "Bevan", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bevan-regular-italic {
+  font-family: "Bevan", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+#para023{
+  font-size: 80px;
+  font-weight:bolder ;
+}
+#imagess img{
+  border-radius: 10px;
+}
+#end{
+  background-color: #c9ff00;
+  color: black;
+  width: 600px;
+  margin: auto;
+  text-align: center;
+  border-radius: 0px 0px 50px 50px;
+  padding: 30px 10px;
+}
+#end p{
+  font-size: 80px;
+  font-weight: bolder;
+  line-height: 0;
+
+}
+#btn55 ,#btn66{
+  padding: 10px 20px;
+            font-size: 15px;
+            border-radius: 50px;
+            font-weight: 400;
+            border: 2px solid black;
+            background-color: transparent;
+            text-transform: uppercase;
+}
+#btn55{
+  background-color: #0a0a0a;
+  color: #c9ff00;
+}
+#happy{
+  font-size: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  color: #c9ff00;
+  margin-top: 20px;
+  font-size: 40px;
+}
+.paralast{
+  font-size: 17px;
+  text-transform: uppercase;
+}
+    </style>
+</head>
+<body>
+    <div class="cursor"></div>
+    <nav>
+        <h3>das gurne</h3>
+        <ul>
+            <li><a href="#about">about us</a></li>
+            <li><a href="#project">project</a></li>
+            <li><a href="#servicess">service</a></li>
+            <li><a href="#let's">let's talk</a></li>
+        </ul>
+    </nav>
+    <div id="main">
+        <div id="section01">
+            <h2 class="bebas-neue-regular" id="data">digitize</h2>
+            <h2 class="bebas-neue-regular" id="ideas">ideas</h2>
+            <div>
+                <button class="btn1"><i class="fa-brands fa-web-awesome" style="color: rgb(18, 18, 17);"></i> 2022 best agency</button>
+                <button class="btn1"><i class="fa-solid fa-globe" style="color: rgb(18, 18, 17);"></i> world class agency</button>
+
+            </div>
+
+        </div>
+        <div id="section02">
+            <div id="image01">
+                <div id="round" >
+                    <i class="fa-solid fa-play" style="color: #0a0a0a; font-size: 30px;"></i>
+
+                </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa numquam nesciunt, impedit quaerat necessitatibus ea placeat, error velit, nostrum ex quisquam. Perferendis maxime ratione provident eaque cumque quia alias deserunt.</p>
+
+        </div>
+    </div> 
+        <div id="seco-hero">
+            <div  id="arow">
+                <i class="fa-solid fa-check" style="color: rgb(235, 235, 227);"></i>
+            </div>
+
+
+    </div>
+     <main style="background-color: black;">
+      <div id="mm">
+        <p id="animasan">discuss youer ideas <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i> discuss youer ideas discuss youer ideas  </p>
+    </div>
+    <section id="about">
+    <div > 
+        <div id="contere">
+          <div id="text">
+              <p id="text01" class="bebas-neue-regular">our services</p>
+              <p id="text02">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis sapiente impedit voluptatibus aliquam accusantium aliquid, beatae quae vel eum cumque!</p>
+          </div>
+          <div id="btn02">
+              <button class="btn04">desing</button>
+              <button class="btn04">development</button>
+              <button class="btn04">digital markting</button>
+              <button class="btn04">seo</button>
+  
+  
+  
+  
+          </div>
+      </div>
+     
+  </div>
+  <div style="background-color: black; color: aliceblue; position: relative; top: -10px;">
+      <hr>
+      <div id="box01">
+          <p id="parass">ui/ux desing</p>
+          <div class="material-symbols-outlined" id="icons">
+            check_small
+          </div>            
+      </div>
+
+      <hr>
+      <div id="box01">
+          <p id="parass">web desing</p>
+          <div class="material-symbols-outlined" id="icons">
+            check_small
+          </div>            
+      </div>
+
+      <hr>
+      <div id="box01">
+          <p id="parass">brand  desing</p>
+          <div class="material-symbols-outlined" id="icons">
+            check_small
+          </div>            
+      </div>
+
+      <hr>
+      <div id="box01">
+          <p id="parass">graphic  desing</p>
+          <div class="material-symbols-outlined" id="icons">
+            check_small
+          </div>            
+      </div>
+
+<div style="background-color: #282928;" id="servicess">
+<p style="width: 700px;margin: auto; font-size: 30px; font-weight: 600; color: #c1c2c1; padding: 20px;" class="bevan-regular ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et autem cupiditate rerum asperiores optio soluta error explicabo. Ducimus commodi impedit tempora, nobis unde consequatur sunt nemo, omnis ad dicta non!</p>
+
+</div>
+
+  </div>
+  
+       </section>
+
+    <section style="position: relative; top: -70px; background-color: #0a0a0a; color: rgb(176, 178, 179); height: 100%;" id="project">
+      <div style="display: flex;flex-wrap: wrap;justify-content: space-around; align-items: center; ">
+        <div style="width: 650px;">
+          <p id="para023" class="bebas-neue-regular">best project</p>
+            <div style="position: relative; top: -2px;">
+              <button class="btn04">desing</button>
+              <button class="btn04">development</button>
+              <button class="btn04">digital markting</button>
+              <button class="btn04">seo</button></div>
+
+
+
+
+
+
+        </div>
+        <div style="width: 300px;">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae ad fugit, illo minima ut autem maiores eum eaque perferendis ullam?</p>
+
+        </div>
+        
+      </div>
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-evenly; align-items: center; gap: 20px; padding-top: 20px;" id="imagess">
+        <img src="https://i.pinimg.com/736x/a0/ea/20/a0ea20de7a46310d2f6d77844a7d869e.jpg" alt="" width="390px" height="300px">
+        <img src="https://i.pinimg.com/736x/ca/f2/0f/caf20fe47ef2305fa8af78d655784436.jpg" alt="" width="390px" height="300px">
+        <img src="https://i.pinimg.com/736x/a3/9d/9e/a39d9e21fc3715b4e0a8e9f3220d0972.jpg" alt="" width="390px" height="300px">
+        <img src="https://i.pinimg.com/736x/81/97/ee/8197ee69969135a48c3dcfb925aa3c9e.jpg" alt="" width="390px" height="300px">
+        <img src="https://i.pinimg.com/736x/e0/bc/1a/e0bc1a01371c65a188c75042343aafd9.jpg" alt="" width="390px" height="300px">
+        <img src="https://i.pinimg.com/736x/d7/a8/c3/d7a8c3328a6e855e1d0b586cea84d871.jpg" alt="" width="390px" height="300px">
+      </div>
+    </section>
+    <section id="let's">
+      <div id="end" class="bebas-neue-regular">
+      <p>let's descuss</p>
+      <p>youideas</p>
+      <div id="">
+        <button id="btn55">talks</button>
+      <button id="btn66">follow us</button>
+      </div>
+    </div>
+    <p id="happy" >das gurne</p>
+    <div style="color: #c9ff00; display: flex; flex-wrap: wrap; justify-content: space-around; align-items: center;">
+      <p class="paralast">terms &amp; agreements</p>
+      <p class="paralast">
+        &copy;
+        <script>
+            document.write(new Date().getFullYear());
+        </script> das gurne all rights reserved
+    </p>  
+  <p class="paralast">privacy policy</p>  </div></section>
+     </main>
+    <script src="./style.js"></script>
+</body>
+</html>
