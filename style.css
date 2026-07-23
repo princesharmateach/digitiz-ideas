@@ -289,15 +289,24 @@ text-transform: uppercase;
 }
 @media (max-width:600px) {
   #data,#ideas{
-    font-size: 0px;
+    font-size: 130px;
   }
   #image01,#end{
-    width: 0px;
+    width: 400px;
   }
   #end p{
     line-height: 2px;
+    font-size: 60px;
   }
   #animasan{
     animation: none;
+    color: red;
+    background-color: pink;
+  }
+  #mm{
+    width: 350px;
+  }
+  #servicess p{
+    width: 300px;
   }
 }
