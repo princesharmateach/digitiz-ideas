@@ -316,4 +316,7 @@ text-transform: uppercase;
   #servicess p{
     width: 300px;
   }
+  .cursor{
+    display: none;
+  }
 }
